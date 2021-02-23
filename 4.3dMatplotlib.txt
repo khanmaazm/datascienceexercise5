@@ -1,0 +1,15 @@
+https://matplotlib.org/mpl_toolkits/mplot3d/tutorial.html
+
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+Axes3D.plot(xs, ys, *args, **kwargs)
+Axes3D.scatter(xs, ys, zs=0, zdir='z', s=20, c=None, depthshade=True, *args, **kwargs)
+Axes3D.plot_wireframe(X, Y, Z, *args, **kwargs)
+Axes3D.plot_surface(X, Y, Z, *args, **kwargs)
+Axes3D.plot_trisurf(*args, **kwargs)
+plot_trisurf(triangulation, ...)
+plot_trisurf(X, Y, ...)
+plot_trisurf(X, Y, triangles, ...)
+plot_trisurf(X, Y, triangles=triangles, ...)
